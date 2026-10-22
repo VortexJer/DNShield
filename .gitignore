@@ -1,0 +1,18 @@
+# Gradle / Android
+.gradle/
+.kotlin/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+
+# Material de trabajo local (capturas, maquetas, informes de pruebas)
+shots/
+design/
+tools/*-report.json
+tools/consumption-report.json
+
+# Estado local de la herramienta de puertas
+.unlazy/
+.unlazy-hook-state.json
