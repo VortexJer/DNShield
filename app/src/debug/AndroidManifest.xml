@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solo en la build de depuracion: control por adb para los tests automaticos. -->
+    <application>
+        <receiver
+            android:name=".debug.DebugReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver"
+            xmlns:tools="http://schemas.android.com/tools">
+            <intent-filter>
+                <action android:name="dev.dnshield.app.debug.CMD" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
